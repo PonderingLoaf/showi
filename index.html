@@ -8,7 +8,7 @@
 		<script>
 			status = document.getElementById("status");
 
-			fetch("https://api.showi.org/test")
+			fetch("https://www.showi.org/api/test")
 				.then((response) => response.json())
 				.then((data) => {
 					status.innerHTML = `Status: ${data.status}`;
