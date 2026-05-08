@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ShowiAPI</title>
+	</head>
+	<body>
+		<h1 id="status">Status:</h1>
+		<script>
+			status = document.getElementById("status");
+
+			fetch("https://api.showi.org/test")
+				.then((response) => response.json())
+				.then((data) => {
+					status.innerHTML = `Status: ${data.status}`;
+				});
+		</script>
+	</body>
+</html>
