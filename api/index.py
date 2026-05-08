@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 from flask import Flask, jsonify, request, send_from_directory
 
 app = Flask(__name__)
