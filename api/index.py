@@ -4,7 +4,7 @@ from flask import Flask, jsonify, request, send_from_directory
 app = Flask(__name__)
 
 
-@app.route("/test")
+@app.route("/api/test")
 def test():
     return jsonify({"message": "test successful"})
 
